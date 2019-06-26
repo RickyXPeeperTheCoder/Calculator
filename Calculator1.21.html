@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html> 
   <head>
-    <title>KatKrate Calculator</title> <style> h1 {border-radius: 10px; background: #d0d0d0; padding: 10px; font-family: Tahoma, Geneva, sans-serif} h3 {border-radius: 10px; background: #d0d0d0; padding: 10px; font-family: Tahoma, Geneva, sans-serif} body {  background-color: rgb(230,230,230);} p.fontA {font-family: Tahoma,Geneva,sans-serif} p.textthingieurhwier { border-radius: 10px; background: #d0d0d0; padding: 10px;                 
+    <title>KatKrate Calculator</title> <style> h1 {border-radius: 10px; background: #d0d0d0; padding: 10px; font-family: Tahoma, Geneva, sans-serif} h3 {border-radius: 10px; background: #d0d0d0; padding: 10px; font-family: Tahoma, Geneva, sans-serif} body {  background-color: rgb(230,230,230);} p.fontA {font-family: Tahoma,Geneva,sans-serif} p.helpstyle { border-radius: 20px; background: #c0c0c0; padding: 10px;} p.textthingieurhwier { border-radius: 10px; background: #d0d0d0; padding: 10px;                 
     }</style>
   </head>
   <body>
  <h1 class="textthingieurhwier">KatKrate Calculator</h1>
- <h3 class="textthingieurhwier">June 26 2019</h3> <a href="https://github.com/RickyXPeeperTheCoder/Calculator/blob/master/Calculator1.18.html">v1.21</a> <p></p>          <canvas id="mycanvas"></canvas> 
+ <h3 class="textthingieurhwier">June 26 2019</h3> <a href="https://github.com/RickyXPeeperTheCoder/Calculator/blob/1.2x/Calculator1.21.html">v1.21</a> <p></p>          <canvas id="mycanvas"></canvas> 
   </body>
  
     <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
@@ -154,11 +154,8 @@ mouseClicked = function () {
     fill(196,196,196);
     text("?",375,375);
     
-    if (mouseX >= 360 && mouseX <= 390 && mouseY >= 360 && mouseY <= 390) {
-        background(60,60,60);
-        fill(255,255,255);
-        text("Welcome to the KatKrate Calculator. This tool allows you to perform basic mathematical operations on 2 1-digit numbers. \nLeft Numberpad: The 10 numbers on the left of the canvas will change the top number (x), to the selected button number. (eg. selecting the "1" button makes x equal 1.)\nRight Numberpad:The 10 numbers on the right of the canvas will change the bottom number (y), to the selected button number. (eg. selecting the "3" button makes y equal 3.)\nx, +, -, and /: Operation buttons. To perform a calculation, (eg. 9*3), configure x and y from the left and right numberpads respectively (in this case x=9 and y=3.) then, select the operation. (eg. to do 9*3, select the "x" button.) The result will show up on the bottom of the canvas.",30,30,370); 
-    }
+     
+    
     
     if (mouseX >= 10 && mouseX <= 120 && mouseY >= 270 && mouseY <= 300) {x = 0;}
     else if (mouseX >= 90 && mouseX <= 120 && mouseY >= 230 && mouseY <= 260) {x = 9;}
@@ -198,6 +195,7 @@ mouseClicked = function () {
     }};
   // Get the canvas that ProcessingJS will use
   var canvas = document.getElementById("mycanvas");    var processingInstance = new Processing(canvas, programCode); 
-  </script> <p class="textthingieurhwier fontA">This is a simple calculator that can add, subtract, multiply, and divide one digit numbers from 0-9. developed by KatKrate.</p>  
+  </script> <p class="textthingieurhwier fontA">This is a simple calculator that can add, subtract, multiply, and divide one digit numbers from 0-9. developed by KatKrate.</p>
+  <p class="helpstyle fontA">Welcome to KatKrate Calculator. This is a program that allows you to perform basic operations on 1-digit numbers. <br>Left Numberpad: The left side of the calculator contains 10 numbers 0-9. Clicking on one of them sets the very top number (x) to the selected number. <br>Right Numberpad: Same as left side, however only affects the number right below x. (y)<br>x,+,-,/: clicking on these buttons will perform the listed operation on x and y, and the output will show at the very bottom of the canvas.<br>   </p>
 
 </html>
