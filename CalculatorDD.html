@@ -22,8 +22,8 @@ textSize(15);
 var x = 0;
 var y = 0;
 var z = 0;
-var v = 1;
-var t = 1;
+var v = 0.1;
+var t = 0.1;
 mouseClicked = function () {
     textSize(15);
     //1
@@ -175,26 +175,26 @@ mouseClicked = function () {
     }
     
     if (mouseX >= 10 && mouseX <= 120 && mouseY >= 270 && mouseY <= 300) {v = v*10; x = x+(v*0);}
-    else if (mouseX >= 90 && mouseX <= 120 && mouseY >= 230 && mouseY <= 260) {v = v*10; x = x+(v*9);}
-    else if (mouseX >= 50 && mouseX <= 80 && mouseY >= 230 && mouseY <= 260) {v = v*10; x = x+(v*8);}
-    else if (mouseX >= 10 && mouseX <= 40 && mouseY >= 230 && mouseY <= 260) {v = v*10; x = x+(v*7);}
-    else if (mouseX >= 90 && mouseX <= 120 && mouseY >= 190 && mouseY <= 220) {v = v*10; x = x+(v*6);}
-    else if (mouseX >= 50 && mouseX <= 80 && mouseY >= 190 && mouseY <= 220) {v = v*10; x = x+(v*5);}
-    else if (mouseX >= 10 && mouseX <= 40 && mouseY >= 190 && mouseY <= 220) {v = v*10; x = x+(v*4);}
-    else if (mouseX >= 90 && mouseX <= 120 && mouseY >= 150 && mouseY <= 180) {v = v*10; x = x+(v*3);}
-    else if (mouseX >= 50 && mouseX <= 80 && mouseY >= 150 && mouseY <= 180) {v = v*10; x = x+(v*2);}
-    else if (mouseX >= 10 && mouseX <= 40 && mouseY >= 150 && mouseY <= 180) {v = v*10; x = x+(v*1);}
+    else if (mouseX >= 90 && mouseX <= 120 && mouseY >= 230 && mouseY <= 260) {v = v*10; x = (x*10*v)+(v*9);}
+    else if (mouseX >= 50 && mouseX <= 80 && mouseY >= 230 && mouseY <= 260) {v = v*10; x = (x*10*v)+(v*8);}
+    else if (mouseX >= 10 && mouseX <= 40 && mouseY >= 230 && mouseY <= 260) {v = v*10; x = (x*10*v)+(v*7);}
+    else if (mouseX >= 90 && mouseX <= 120 && mouseY >= 190 && mouseY <= 220) {v = v*10; x = (x*10*v)+(v*6);}
+    else if (mouseX >= 50 && mouseX <= 80 && mouseY >= 190 && mouseY <= 220) {v = v*10; x = (x*10*v)+(v*5);}
+    else if (mouseX >= 10 && mouseX <= 40 && mouseY >= 190 && mouseY <= 220) {v = v*10; x = (x*10*v)+(v*4);}
+    else if (mouseX >= 90 && mouseX <= 120 && mouseY >= 150 && mouseY <= 180) {v = v*10; x = (x*10*v)+(v*3);}
+    else if (mouseX >= 50 && mouseX <= 80 && mouseY >= 150 && mouseY <= 180) {v = v*10; x = (x*10*v)+(v*2);}
+    else if (mouseX >= 10 && mouseX <= 40 && mouseY >= 150 && mouseY <= 180) {v = v*10; x = (x*10*v)+(v*1);}
     
-    if (mouseX >= 280 && mouseX <= 390 && mouseY >= 270 && mouseY <= 300) {t = t*10; y = y+(t*0);}
-    else if (mouseX >= 90+270 && mouseX <= 120+270 && mouseY >= 230 && mouseY <= 260) {t = t*10; y = y+(t*9);}
-    else if (mouseX >= 50+270 && mouseX <= 80+270 && mouseY >= 230 && mouseY <= 260) {t = t*10; y = y+(t*8);}
-    else if (mouseX >= 10+270 && mouseX <= 40+270 && mouseY >= 230 && mouseY <= 260) {t = t*10; y = y+(t*7);}
-    else if (mouseX >= 90+270 && mouseX <= 120+270 && mouseY >= 190 && mouseY <= 220) {t = t*10; y = y+(t*6);}
-    else if (mouseX >= 50+270 && mouseX <= 80+270 && mouseY >= 190 && mouseY <= 220) {t = t*10; y = y+(t*5);}
-    else if (mouseX >= 10+270 && mouseX <= 40+270 && mouseY >= 190 && mouseY <= 220) {t = t*10; y = y+(t*4);}
-    else if (mouseX >= 90+270 && mouseX <= 120+270 && mouseY >= 150 && mouseY <= 180) {t = t*10; y = y+(t*3);}
-    else if (mouseX >= 50+270 && mouseX <= 80+270 && mouseY >= 150 && mouseY <= 180) {t = t*10; y = y+(t*2);}
-    else if (mouseX >= 10+270 && mouseX <= 40+270 && mouseY >= 150 && mouseY <= 180) {t = t*10; y = y+(t*1);}
+    if (mouseX >= 280 && mouseX <= 390 && mouseY >= 270 && mouseY <= 300) {t = t*10; y = (y*10*t)+(t*0);}
+    else if (mouseX >= 90+270 && mouseX <= 120+270 && mouseY >= 230 && mouseY <= 260) {t = t*10; y = (y*10*t)+(t*9);}
+    else if (mouseX >= 50+270 && mouseX <= 80+270 && mouseY >= 230 && mouseY <= 260) {t = t*10; y = (y*10*t)+(t*8);}
+    else if (mouseX >= 10+270 && mouseX <= 40+270 && mouseY >= 230 && mouseY <= 260) {t = t*10; y = (y*10*t)+(t*7);}
+    else if (mouseX >= 90+270 && mouseX <= 120+270 && mouseY >= 190 && mouseY <= 220) {t = t*10; y = (y*10*t)+(t*6);}
+    else if (mouseX >= 50+270 && mouseX <= 80+270 && mouseY >= 190 && mouseY <= 220) {t = t*10; y = (y*10*t)+(t*5);}
+    else if (mouseX >= 10+270 && mouseX <= 40+270 && mouseY >= 190 && mouseY <= 220) {t = t*10; y = (y*10*t)+(t*4);}
+    else if (mouseX >= 90+270 && mouseX <= 120+270 && mouseY >= 150 && mouseY <= 180) {t = t*10; y = (y*10*t)+(t*3);}
+    else if (mouseX >= 50+270 && mouseX <= 80+270 && mouseY >= 150 && mouseY <= 180) {t = t*10; y = (y*10*t)+(t*2);}
+    else if (mouseX >= 10+270 && mouseX <= 40+270 && mouseY >= 150 && mouseY <= 180) {t = t*10; y = (y*10*t)+(t*1);}
     if (mouseX >= 185 && mouseX <= 215 && mouseY >= 190 && mouseY <= 220) {z = x+y;}
     else if (mouseX >= 185 && mouseX <= 215 && mouseY >= 230 && mouseY <= 260) {z = x-y;}
     else if (mouseX >= 185 && mouseX <= 215 && mouseY >= 150 && mouseY <= 180) {z = x*y;}
