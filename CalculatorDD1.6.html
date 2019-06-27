@@ -203,13 +203,13 @@ mouseClicked = function () {
     if (mouseX >= 185 && mouseX <= 215 && mouseY >= 190 && mouseY <= 220) {z = x+y;}
     else if (mouseX >= 185 && mouseX <= 215 && mouseY >= 230 && mouseY <= 260) {z = x-y;}
     else if (mouseX >= 185 && mouseX <= 215 && mouseY >= 150 && mouseY <= 180) {z = x*y;}
-    else if (mouseX >= 185 && mouseX <= 215 && mouseY >= 270 && mouseY <= 300) {z = round(x/y);}
+    else if (mouseX >= 185 && mouseX <= 215 && mouseY >= 270 && mouseY <= 300) {z = x/y;}
     else if (mouseX >= 320 && mouseX <= 350 && mouseY >= 360 && mouseY <= 390) {z = sqrt(x);}
     else if (mouseX >= 280 && mouseX <= 310 && mouseY >= 360 && mouseY <= 390) {if (z < 0) {z = -z;}}
     else if (mouseX >= 10 && mouseX <= 40 && mouseY >= 360 && mouseY <= 390) {x = 0; y = 0;}
     
     if (x > 9999) {x = 9999; text("Numbers must be 4 digits or less", 138, 15); }
-    else if (x > 9999) {x = 9999; text("Numbers must be 4 digits or less", 138, 15); }
+    else if (y > 9999) {y = 9999; text("Numbers must be 4 digits or less", 138, 15); }
     fill(255, 255, 255);
     textSize(40);
     textAlign(LEFT, CENTER);
