@@ -165,7 +165,12 @@ mouseClicked = function () {
     rect(280,360,30,30);
     fill(196,196,196);
     text("[]",295,375);
-     
+    //C
+    fill(87, 87, 87);
+    rect(10,360,30,30);
+    fill(196,196,196);
+    text("C",25,375);
+  
     if (mouseX >= 360 && mouseX <= 390 && mouseY >= 360 && mouseY <= 390) {
     fill(255,255,255);
     text("R Numpad ^",280,325);
@@ -203,11 +208,13 @@ mouseClicked = function () {
     else if (mouseX >= 280 && mouseX <= 310 && mouseY >= 360 && mouseY <= 390) {if (z < 0) {z = -z;}}
     fill(255, 255, 255);
     textSize(40);
-    text(x,350,55);
-    text(y,350,100);
+    textAlign(LEFT, CENTER);
+    text(x,300,55);
+    text(y,300,100);
     textSize(25);
     text(z.toFixed(2),200,350);
     textSize(15);
+    textAlign(CENTER,CENTER);
     
     
 };
